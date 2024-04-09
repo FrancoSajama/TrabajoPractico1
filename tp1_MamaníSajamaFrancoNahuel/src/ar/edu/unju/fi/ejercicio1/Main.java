@@ -4,7 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int notaMatematica=6, notaQuimica=7, notaFisica=9, notaLiteratura=5, notaHistoria=4, sumaNotas=0;
+		float promedioNotas=(float)(notaMatematica+notaQuimica+notaFisica+notaLiteratura+notaHistoria)/5;
+		
+		System.out.println("El promedio de notas es: "+promedioNotas);
 	}
 
 }
