@@ -23,7 +23,7 @@ public class Main {
 		}else 
 			System.out.print("El numero ingresado no esta en el rango especificado.");
 			
-		
+		sc.close();
 	}
 
 }

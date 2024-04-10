@@ -16,6 +16,7 @@ public class Main {
 				System.out.print("\n"+num+" x "+i+" = "+num*i);
 		else
 			System.out.print("\nEl numero ingresado no esta en el rango especificado.");
+		sc.close();
 	}
-
+	
 }

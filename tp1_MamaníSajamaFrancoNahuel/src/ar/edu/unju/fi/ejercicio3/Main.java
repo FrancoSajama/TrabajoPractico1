@@ -17,6 +17,7 @@ public class Main {
 		}else {
 			System.out.println("El numero "+numero+" es impar."+" El nuevo numero es: "+numero*2);
 		}
+		sc.close();
 	}
 
 }
