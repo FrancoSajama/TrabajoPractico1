@@ -66,9 +66,8 @@ public class Persona {
 	public Integer calcularEdad() {
 		LocalDate fechaActual = LocalDate.now();
 		int edad=fechaActual.getYear()-fechaNacimiento.getYear();
-		
 		if(fechaNacimiento.getDayOfYear()>=fechaActual.getDayOfYear())
-			edad++;
+			edad--;
 		
 		return edad;
 	}
@@ -82,9 +81,9 @@ public class Persona {
 		System.out.println("Nombre: "+this.nombre);
 		System.out.println("Fecha de nacimiento: "+this.fechaNacimiento);
 		if(this.esMayor())
-			System.out.println("La persona es mayor de edad.");
+			System.out.println("La persona es mayor de edad. ");
 		else
-			System.out.println("La persona no es mayor de edad.");
+			System.out.println("La persona no es mayor de edad. ");
 		System.out.println("Provincia: "+this.provincia);
 	}
 
