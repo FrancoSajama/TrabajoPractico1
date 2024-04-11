@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		int num, aux, factorial=1;
+		int num;
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.print("Ingrese un numero del 1 al 9 para mostrar la tabla de multiplicacion correspondiente: ");
