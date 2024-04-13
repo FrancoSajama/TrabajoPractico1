@@ -1,16 +1,19 @@
-package ar.edu.unju.fi.ejercicio6;
+package ar.edu.unju.fi.ejercicio6.main;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+
+import ar.edu.unju.fi.ejercicio6.model.Persona;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int op;
-		int anio, mes, dia;
 		String dni, nombre, provincia;
 		LocalDate fechaNacimiento;
+		DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		
 		Scanner sc=new Scanner(System.in);
 		
@@ -18,13 +21,8 @@ public class Main {
 		dni=sc.next();
 		System.out.println("Ingrese nombre: ");
 		nombre=sc.next();
-		System.out.println("Ingrese año de nacimiento: ");
-		anio=sc.nextInt();
-		System.out.println("Ingrese mes de nacimiento: ");
-		mes=sc.nextInt();
-		System.out.println("Ingrese dia de nacimiento: ");
-		dia=sc.nextInt();
-		fechaNacimiento=LocalDate.of(anio, mes, dia);
+		System.out.println("Ingrese fecha de nacimiento (dd-MM-yyyy): ");
+		fechaNacimiento=LocalDate.parse(sc.next(), formatoFecha);
 		System.out.println("Ingrese provincia: ");
 		provincia=sc.next();
 		
