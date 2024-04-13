@@ -1,10 +1,10 @@
-package ar.edu.unju.fi.ejercicio6.main;
+package ar.edu.unju.fi.ejercicio06.main;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-import ar.edu.unju.fi.ejercicio6.model.Persona;
+import ar.edu.unju.fi.ejercicio06.model.Persona;
 
 public class Main {
 

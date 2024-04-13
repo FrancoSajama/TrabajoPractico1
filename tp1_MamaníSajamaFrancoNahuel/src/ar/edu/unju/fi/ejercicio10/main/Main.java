@@ -1,6 +1,8 @@
-package ar.edu.unju.fi.ejercicio10;
+package ar.edu.unju.fi.ejercicio10.main;
 
 import java.util.Scanner;
+
+import ar.edu.unju.fi.ejercicio10.model.Pizza;
 
 public class Main {
 

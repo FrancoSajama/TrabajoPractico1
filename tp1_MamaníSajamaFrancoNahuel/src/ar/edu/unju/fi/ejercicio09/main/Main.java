@@ -1,6 +1,8 @@
-package ar.edu.unju.fi.ejercicio9;
+package ar.edu.unju.fi.ejercicio09.main;
 
 import java.util.Scanner;
+
+import ar.edu.unju.fi.ejercicio09.model.Producto;
 
 public class Main {
 
