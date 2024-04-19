@@ -16,6 +16,11 @@ public class Main {
 		mostrarDatosArray(numerosEnteros);
 	}
 	
+	/**Metodo para asegurarnos que lo que el usuario ingrese por consola sean solo numeros enteros
+	 * 
+	 * @param imprimirMensaje usamos para mostrar al usuario por consola
+	 * @return una vez que el usuario ingresa un numero entero, el metodo termina
+	 */
 	public static Integer obtenerNumeroEntero(String imprimirMensaje) {
 		while(true) {
 			try {
