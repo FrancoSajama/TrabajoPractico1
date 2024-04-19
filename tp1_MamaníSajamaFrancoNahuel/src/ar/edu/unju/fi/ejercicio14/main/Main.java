@@ -18,6 +18,7 @@ public class Main {
 		}
 		Integer[] numerosEnteros = cargarArrayConNumerosEnteros(numero);
 		mostrarDatosArray(numerosEnteros);
+		System.out.println("Suma de todos los valores del array: "+obtenerSumaDeTodosLosValores(numerosEnteros));
 	}
 	
 	/**Metodo para asegurarnos que lo que el usuario ingrese por consola sean solo numeros enteros
@@ -53,6 +54,13 @@ public class Main {
 	public static void mostrarDatosArray(Integer[] numerosEnteros){
 		for(int i = 0; i <= numerosEnteros.length-1; i++)
 			System.out.println("["+i+"] = "+ numerosEnteros[i]);
+	}
+	
+	public static Integer obtenerSumaDeTodosLosValores(Integer[] numerosEnteros) {
+		int suma=0;
+		for(int i = 0; i <= numerosEnteros.length-1; i++)
+			suma += numerosEnteros[i];
+		return suma;
 	}
 
 }
